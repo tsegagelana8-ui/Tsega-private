@@ -24,7 +24,7 @@
       background: radial-gradient(circle at top center, #1b1138 0%, var(--bg-deep) 65%);
       color: var(--text-main);
       min-height: 100vh;
-      padding-bottom: 90px;
+      padding-bottom: 50px;
     }
     #lockScreen {
       position: fixed; inset: 0; z-index: 9999;
@@ -34,88 +34,89 @@
     }
     #lockScreen.hidden { display: none; }
     .lock-icon {
-      width: 72px; height: 72px; border-radius: 20px;
+      width: 60px; height: 60px; border-radius: 16px;
       background: linear-gradient(135deg, #9869ff, #4518b8);
       display: flex; align-items: center; justify-content: center;
-      font-size: 36px; font-weight: 900; color: #fff; margin-bottom: 20px;
+      font-size: 30px; font-weight: 900; color: #fff; margin-bottom: 16px;
     }
-    .lock-title { font-size: 24px; font-weight: 800; margin-bottom: 8px; }
-    .lock-sub { font-size: 14px; color: var(--text-muted); max-width: 280px; margin-bottom: 24px; }
+    .lock-title { font-size: 22px; font-weight: 800; margin-bottom: 6px; }
+    .lock-sub { font-size: 13px; color: var(--text-muted); max-width: 280px; margin-bottom: 20px; }
     .pin-input {
-      width: 220px; padding: 14px; border-radius: 14px;
+      width: 200px; padding: 12px; border-radius: 12px;
       border: 1px solid var(--border-subtle); background: rgba(255,255,255,0.05);
-      color: #fff; font-size: 22px; letter-spacing: 8px; text-align: center; outline: none; margin-bottom: 14px;
+      color: #fff; font-size: 20px; letter-spacing: 6px; text-align: center; outline: none; margin-bottom: 12px;
     }
     .btn-primary {
       background: linear-gradient(135deg, var(--purple-glow), var(--purple-dark));
-      color: #fff; border: none; padding: 13px 24px; border-radius: 14px;
-      font-weight: 700; font-size: 15px; cursor: pointer; width: 220px; margin-bottom: 10px;
+      color: #fff; border: none; padding: 11px 20px; border-radius: 12px;
+      font-weight: 700; font-size: 14px; cursor: pointer; width: 200px; margin-bottom: 8px;
     }
     .btn-secondary {
       background: rgba(255,255,255,0.06); color: var(--text-main);
-      border: 1px solid var(--border-subtle); padding: 11px 20px; border-radius: 14px;
-      font-weight: 600; font-size: 14px; cursor: pointer; width: 220px;
+      border: 1px solid var(--border-subtle); padding: 10px 18px; border-radius: 12px;
+      font-weight: 600; font-size: 13px; cursor: pointer; width: 200px;
     }
-    .app-container { max-width: 520px; margin: 0 auto; padding: 20px 16px; }
-    .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
-    .greeting h1 { font-size: 26px; font-weight: 800; }
-    .greeting p { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
-    .header-actions { display: flex; align-items: center; gap: 8px; }
+    .app-container { max-width: 520px; margin: 0 auto; padding: 14px 12px; }
+    .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+    .greeting h1 { font-size: 22px; font-weight: 800; }
+    .greeting p { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+    .header-actions { display: flex; align-items: center; gap: 6px; }
     .status-pill {
-      display: flex; align-items: center; gap: 6px;
+      display: flex; align-items: center; gap: 5px;
       background: rgba(16,185,129,0.12); border: 1px solid rgba(16,185,129,0.25);
-      color: #6ee7b7; font-size: 11px; font-weight: 600; padding: 6px 10px; border-radius: 20px;
+      color: #6ee7b7; font-size: 10px; font-weight: 600; padding: 5px 8px; border-radius: 16px;
     }
-    .status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--success); }
+    .status-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--success); }
     .icon-btn {
-      width: 36px; height: 36px; border-radius: 12px; background: var(--bg-card);
+      width: 32px; height: 32px; border-radius: 10px; background: var(--bg-card);
       border: 1px solid var(--border-subtle); color: var(--text-main);
-      display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 16px;
+      display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 14px;
     }
     .card {
       background: var(--bg-card); border: 1px solid var(--border-subtle);
-      border-radius: 18px; padding: 16px; margin-bottom: 14px;
+      border-radius: 14px; padding: 12px 14px; margin-bottom: 10px;
     }
-    .card-label { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: var(--purple-glow); margin-bottom: 8px; }
-    .scripture-text { font-size: 14px; line-height: 1.5; color: #e2e8f0; }
-    .intention-box { display: flex; align-items: center; gap: 12px; }
+    .card-label { font-size: 10px; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; color: var(--purple-glow); margin-bottom: 4px; }
+    .scripture-text { font-size: 13px; line-height: 1.4; color: #e2e8f0; }
+    .intention-box { display: flex; align-items: center; gap: 10px; }
     .intention-icon {
-      width: 40px; height: 40px; border-radius: 12px; background: rgba(139,92,246,0.15);
-      display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;
+      width: 34px; height: 34px; border-radius: 10px; background: rgba(139,92,246,0.15);
+      display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0;
     }
-    .intention-input { width: 100%; background: transparent; border: none; color: var(--text-main); font-size: 14px; font-weight: 600; outline: none; }
-    .timer-display { font-size: 42px; font-weight: 800; text-align: center; font-variant-numeric: tabular-nums; margin: 10px 0 14px; color: #fff; }
-    .timer-controls { display: flex; gap: 10px; justify-content: center; }
+    .intention-input { width: 100%; background: transparent; border: none; color: var(--text-main); font-size: 13px; font-weight: 600; outline: none; }
+    .timer-row { display: flex; align-items: center; justify-content: space-between; }
+    .timer-display { font-size: 28px; font-weight: 800; font-variant-numeric: tabular-nums; color: #fff; }
+    .timer-controls { display: flex; gap: 6px; }
     .timer-btn {
-      padding: 10px 20px; border-radius: 12px; border: 1px solid var(--border-subtle);
-      background: var(--bg-card-elevated); color: #fff; font-weight: 700; font-size: 13px; cursor: pointer;
+      padding: 6px 12px; border-radius: 10px; border: 1px solid var(--border-subtle);
+      background: var(--bg-card-elevated); color: #fff; font-weight: 700; font-size: 12px; cursor: pointer;
     }
     .timer-btn.active { background: var(--purple-primary); border-color: var(--purple-glow); }
-    .add-row { display: flex; gap: 8px; margin-bottom: 12px; }
+    .add-row { display: flex; gap: 6px; margin-bottom: 8px; }
     .add-input {
       flex: 1; background: rgba(255,255,255,0.05); border: 1px solid var(--border-subtle);
-      border-radius: 12px; padding: 10px 14px; color: #fff; font-size: 14px; outline: none;
+      border-radius: 10px; padding: 8px 12px; color: #fff; font-size: 13px; outline: none;
     }
-    .add-btn { background: var(--purple-primary); color: #fff; border: none; border-radius: 12px; padding: 0 16px; font-weight: 700; font-size: 18px; cursor: pointer; }
-    .habit-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .add-btn { background: var(--purple-primary); color: #fff; border: none; border-radius: 10px; padding: 0 14px; font-weight: 700; font-size: 16px; cursor: pointer; }
+    .habit-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
     .habit-item {
       display: flex; align-items: center; justify-content: space-between;
       background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
-      padding: 12px 14px; border-radius: 14px; cursor: pointer;
+      padding: 9px 12px; border-radius: 10px; cursor: pointer;
     }
     .habit-item.done { opacity: 0.55; }
     .habit-item.done span { text-decoration: line-through; }
-    .habit-left { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; }
+    .habit-left { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; }
     .check-circle {
-      width: 20px; height: 20px; border-radius: 6px; border: 2px solid var(--purple-glow);
-      display: flex; align-items: center; justify-content: center; font-size: 12px;
+      width: 18px; height: 18px; border-radius: 5px; border: 2px solid var(--purple-glow);
+      display: flex; align-items: center; justify-content: center; font-size: 11px;
     }
     .habit-item.done .check-circle { background: var(--purple-primary); }
-    .del-btn { background: transparent; border: none; color: var(--text-muted); font-size: 16px; cursor: pointer; padding: 2px 6px; }
+    .del-btn { background: transparent; border: none; color: var(--text-muted); font-size: 14px; cursor: pointer; padding: 2px 4px; }
     #toast {
-      position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(80px);
+      position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%) translateY(60px);
       background: #1e153b; border: 1px solid var(--purple-glow); color: #fff;
-      padding: 10px 18px; border-radius: 12px; font-size: 13px; font-weight: 600;
+      padding: 8px 14px; border-radius: 10px; font-size: 12px; font-weight: 600;
       z-index: 10000; transition: transform 0.25s ease; white-space: nowrap;
     }
     #toast.show { transform: translateX(-50%) translateY(0); }
@@ -135,13 +136,13 @@
   <div class="app-container">
     <div class="header">
       <div class="greeting">
-        <h1 id="greetingText">Good afternoon,<br>Tsega</h1>
+        <h1 id="greetingText">Good evening,<br>Tsega</h1>
         <p id="dateText"></p>
       </div>
       <div class="header-actions">
         <div class="status-pill">
           <span class="status-dot"></span>
-          <span>Synced &amp;<br>Offline Ready</span>
+          <span>Offline Ready</span>
         </div>
         <button class="icon-btn" id="resetPinBtn" title="Change PIN">⌘</button>
         <button class="icon-btn" id="lockNowBtn" title="Lock App">🔒</button>
@@ -154,34 +155,31 @@
     </div>
 
     <div class="card">
-      <div class="card-label">COLOSSIANS 3:23</div>
-      <p class="scripture-text">“Whatever you do, work at it with all your heart, as working for the Lord.”</p>
-    </div>
-
-    <div class="card">
       <div class="intention-box">
         <div class="intention-icon">⚡</div>
         <div style="flex:1">
           <div class="card-label">TODAY'S PRIMARY INTENTION</div>
-          <input type="text" id="intentionInput" class="intention-input" value="Execute high-leverage creative work with unwavering discipline and zero distractions." />
+          <input type="text" id="intentionInput" class="intention-input" value="Execute high-leverage creative work with zero distractions." />
         </div>
       </div>
     </div>
 
     <div class="card">
       <div class="card-label">DEEP FOCUS SESSION</div>
-      <div class="timer-display" id="timerDisplay">25:00</div>
-      <div class="timer-controls">
-        <button class="timer-btn active" id="startTimerBtn">Start</button>
-        <button class="timer-btn" id="pauseTimerBtn">Pause</button>
-        <button class="timer-btn" id="resetTimerBtn">Reset</button>
+      <div class="timer-row">
+        <div class="timer-display" id="timerDisplay">25:00</div>
+        <div class="timer-controls">
+          <button class="timer-btn active" id="startTimerBtn">Start</button>
+          <button class="timer-btn" id="pauseTimerBtn">Pause</button>
+          <button class="timer-btn" id="resetTimerBtn">Reset</button>
+        </div>
       </div>
     </div>
 
     <div class="card">
       <div class="card-label">DAILY NON-NEGOTIABLES</div>
       <div class="add-row">
-        <input type="text" id="newHabitInput" class="add-input" placeholder="Add new habit or task..." />
+        <input type="text" id="newHabitInput" class="add-input" placeholder="Add new habit..." />
         <button class="add-btn" id="addHabitBtn">+</button>
       </div>
       <ul class="habit-list" id="habitList"></ul>
@@ -195,7 +193,7 @@
       const t = document.getElementById('toast');
       t.textContent = msg;
       t.classList.add('show');
-      setTimeout(() => t.classList.remove('show'), 2800);
+      setTimeout(() => t.classList.remove('show'), 2500);
     }
 
     async function sha256(str) {
@@ -210,7 +208,7 @@
       if (hr < 12) greet = 'Good morning,';
       else if (hr < 18) greet = 'Good afternoon,';
       document.getElementById('greetingText').innerHTML = `${greet}<br>Tsega`;
-      document.getElementById('dateText').textContent = now.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+      document.getElementById('dateText').textContent = now.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
     }
     updateHeader();
 
@@ -225,10 +223,10 @@
       const savedHash = localStorage.getItem(PIN_KEY);
       if (!savedHash) {
         lockTitle.textContent = 'Create Workspace PIN';
-        lockSubtitle.textContent = 'Set a 4 to 6 digit PIN to protect your offline tracker.';
+        lockSubtitle.textContent = 'Set a 4 to 6 digit PIN.';
       } else {
         lockTitle.textContent = 'Welcome back, Tsega';
-        lockSubtitle.textContent = 'Verify your PIN or Biometrics to unlock your workspace.';
+        lockSubtitle.textContent = 'Verify PIN or Biometrics.';
       }
       lockScreen.classList.remove('hidden');
       pinInput.value = '';
@@ -242,7 +240,7 @@
       if (!savedHash) {
         localStorage.setItem(PIN_KEY, hash);
         lockScreen.classList.add('hidden');
-        showToast('PIN created & workspace unlocked');
+        showToast('PIN created');
       } else if (hash === savedHash) {
         lockScreen.classList.add('hidden');
         pinInput.value = '';
@@ -263,7 +261,7 @@
           const cred = await navigator.credentials.create({
             publicKey: { challenge, rp: { name: 'Tsega Habit Tracker' }, user: { id: new Uint8Array([1, 2, 3, 4]), name: 'tsega', displayName: 'Tsega' }, pubKeyCredParams: [{ alg: -7, type: 'public-key' }] }
           });
-          if (cred) { localStorage.setItem(CRED_KEY, 'enabled'); lockScreen.classList.add('hidden'); showToast('Biometrics enabled & unlocked'); }
+          if (cred) { localStorage.setItem(CRED_KEY, 'enabled'); lockScreen.classList.add('hidden'); showToast('Biometrics enabled'); }
         } else {
           await navigator.credentials.get({ publicKey: { challenge, userVerification: 'required' } });
           lockScreen.classList.add('hidden');
@@ -272,7 +270,7 @@
     });
 
     document.getElementById('lockNowBtn').addEventListener('click', initSecurity);
-    document.getElementById('resetPinBtn').addEventListener('click', () => { localStorage.removeItem(PIN_KEY); initSecurity(); showToast('Enter a new PIN'); });
+    document.getElementById('resetPinBtn').addEventListener('click', () => { localStorage.removeItem(PIN_KEY); initSecurity(); showToast('Enter new PIN'); });
     document.addEventListener('visibilitychange', () => { if (document.hidden && localStorage.getItem(PIN_KEY)) initSecurity(); });
     initSecurity();
 
@@ -285,7 +283,7 @@
 
     let habits = JSON.parse(localStorage.getItem(HABITS_KEY) || 'null') || [
       { id: 1, text: 'Morning prayer & scripture reading', done: false },
-      { id: 2, text: '2 hours deep motion design / editing sprint', done: false },
+      { id: 2, text: '2 hours deep motion design sprint', done: false },
       { id: 3, text: 'Client outreach & portfolio update', done: false }
     ];
 
@@ -293,6 +291,7 @@
 
     function renderHabits() {
       const list = document.getElementById('habitList');
+      if (!list) return;
       list.innerHTML = '';
       habits.forEach((h) => {
         const li = document.createElement('li');
@@ -310,17 +309,23 @@
       });
     }
 
-    document.getElementById('addHabitBtn').addEventListener('click', () => {
-      const input = document.getElementById('newHabitInput');
-      const text = input.value.trim();
-      if (!text) return;
-      habits.push({ id: Date.now(), text, done: false });
-      input.value = '';
-      saveHabits();
-      renderHabits();
-    });
+    const addHabitBtn = document.getElementById('addHabitBtn');
+    if (addHabitBtn) {
+      addHabitBtn.addEventListener('click', () => {
+        const input = document.getElementById('newHabitInput');
+        const text = input.value.trim();
+        if (!text) return;
+        habits.push({ id: Date.now(), text, done: false });
+        input.value = '';
+        saveHabits();
+        renderHabits();
+      });
+    }
 
-    document.getElementById('newHabitInput').addEventListener('keydown', (e) => { if (e.key === 'Enter') document.getElementById('addHabitBtn').click(); });
+    const newHabitInput = document.getElementById('newHabitInput');
+    if (newHabitInput) {
+      newHabitInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') addHabitBtn.click(); });
+    }
     renderHabits();
 
     let secondsLeft = 25 * 60;
@@ -328,7 +333,8 @@
     function updateTimerUI() {
       const mins = String(Math.floor(secondsLeft / 60)).padStart(2, '0');
       const secs = String(secondsLeft % 60).padStart(2, '0');
-      document.getElementById('timerDisplay').textContent = `${mins}:${secs}`;
+      const display = document.getElementById('timerDisplay');
+      if (display) display.textContent = `${mins}:${secs}`;
     }
 
     document.getElementById('startTimerBtn').addEventListener('click', () => {
